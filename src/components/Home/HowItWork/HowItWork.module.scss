@@ -1,6 +1,6 @@
 .create {
 	@apply flex flex-row-reverse p-12 pb-12 bg-light-black_third dark:bg-dark-black_secondary dark:text-white duration-300
-	max-sm:flex-col-reverse  max-sm:items-center max-sm:p-0 max-sm:mt-20 max-sm:mb-20;
+	max-sm:flex-col-reverse  max-sm:items-center max-sm:p-0 max-sm:pt-20 max-sm:pb-20;
 }
 
 .picture {
@@ -18,7 +18,7 @@
 .profile {
 	@apply absolute z-10 flex justify-center items-center -left-20 bottom-60 p-8 shadow-xl rounded-3xl bg-white backdrop-blur-sm bg-opacity-50
 	dark:bg-black dark:bg-opacity-50 dark:backdrop-blur-sm
-	max-md:p-5 max-md:bottom-20 max-md:left-0 max-sm:bottom-52;
+	max-md:p-5 max-md:bottom-20 max-md:left-10 max-sm:bottom-20;
 
 	& .avatar {
 		@apply overflow-hidden w-20 h-20 mr-8 rounded-full max-md:w-16 max-md:h-16;
@@ -36,7 +36,7 @@
 	}
 
 	& .categories {
-		@apply w-80 text-xl max-md:text-lg max-md:w-72;
+		@apply w-80 text-xl max-md:text-base max-md:w-72;
 	}
 }
 

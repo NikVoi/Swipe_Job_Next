@@ -1,6 +1,6 @@
 .button {
 	@apply flex justify-center items-center p-4 px-8 rounded-2xl text-4xl relative
-	dark:bg-dark-black_prime bg-light-black_secondary;
+	dark:bg-dark-black_prime bg-light-black_secondary max-sm:px-4;
 
 	& svg {
 		@apply inline-block mr-4;

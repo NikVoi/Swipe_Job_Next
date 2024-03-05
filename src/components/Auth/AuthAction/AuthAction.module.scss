@@ -1,5 +1,5 @@
 .content {
-	@apply flex flex-col justify-around w-5/12 h-full py-14 px-16 bg-light-black_third dark:bg-dark-black_secondary;
+	@apply flex flex-col justify-around w-5/12 h-full py-14 px-16 bg-light-black_third dark:bg-dark-black_secondary max-sm:w-full max-sm:px-8 max-sm:py-4;
 }
 
 .logo {
@@ -7,7 +7,7 @@
 }
 
 .choice {
-	@apply flex justify-evenly mb-16 mt-8;
+	@apply flex justify-evenly mb-16 mt-8 max-sm:justify-around;
 }
 
 .authChoice {

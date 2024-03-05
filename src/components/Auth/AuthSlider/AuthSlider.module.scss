@@ -1,5 +1,5 @@
 .slider {
-	@apply w-7/12 h-full;
+	@apply w-7/12 h-full max-sm:hidden;
 
 	& img {
 		@apply h-full object-cover;
