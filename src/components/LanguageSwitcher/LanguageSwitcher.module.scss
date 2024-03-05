@@ -1,0 +1,11 @@
+.lang {
+	@apply relative flex justify-center items-center;
+}
+
+.select {
+	@apply text-black;
+}
+
+.ico {
+	@apply absolute top-10 right-1 text-black rotate-90;
+}

@@ -1,0 +1,12 @@
+.wrapper {
+	@apply flex flex-col justify-between w-full h-4/6;
+}
+
+.label {
+	@apply block text-3xl pl-2 duration-300;
+}
+
+.textarea {
+	@apply duration-300 block w-full h-full text-2xl p-4 placeholder:text-gray border border-solid  border-gray rounded-2xl dark:bg-dark-black_third
+	focus:border-primary focus:shadow-md focus:shadow-primary resize-none;
+}

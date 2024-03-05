@@ -1,0 +1,23 @@
+.preference {
+	@apply flex flex-col justify-between h-4/5 w-3/5 p-10 bg-white dark:bg-dark-black_third rounded-3xl duration-300;
+}
+
+.title {
+	@apply mb-8;
+}
+
+.content {
+	@apply flex flex-col flex-1 h-full mb-12;
+}
+
+.inputWrapper {
+	@apply flex flex-1 justify-between w-full h-full;
+}
+
+.action {
+	@apply flex;
+
+	& button {
+		@apply first:mr-5 pr-12 pl-12 first:bg-white first:text-primary dark:first:bg-dark-black_third last:bg-primary last:text-white;
+	}
+}

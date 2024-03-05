@@ -1,0 +1,29 @@
+.button {
+	@apply flex justify-center items-center p-4 px-8 rounded-2xl text-4xl relative
+	dark:bg-dark-black_prime bg-light-black_secondary;
+
+	& svg {
+		@apply inline-block mr-4;
+	}
+
+	&:hover {
+		@apply duration-500 rounded-2xl border-solid border-spacing-2 
+		dark:bg-black bg-gray;
+
+		& .arrow_down {
+			@apply duration-500 bg-black;
+		}
+	}
+
+	&.active {
+		@apply bg-light-black_prime dark:bg-black text-white;
+
+		& .arrow_down {
+			@apply bg-light-black_prime dark:bg-black;
+		}
+
+		& .arrow_down {
+			@apply w-6 h-6 absolute -bottom-3 left-1/2 rotate-45 dark:bg-black;
+		}
+	}
+}

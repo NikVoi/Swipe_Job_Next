@@ -1,0 +1,12 @@
+.header {
+	@apply flex justify-between py-4 px-8 bg-dark-black_prime 
+	text-white;
+}
+
+.sing {
+	@apply flex justify-between items-center;
+
+	& a {
+		@apply first:mr-4;
+	}
+}

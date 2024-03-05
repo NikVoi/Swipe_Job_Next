@@ -1,0 +1,24 @@
+.wrapper {
+	@apply relative flex flex-col w-full mr-8;
+}
+
+.select {
+	@apply w-full h-20 p-4 mb-8 border border-solid border-gray border-opacity-50 text-black rounded-2xl bg-white text-2xl
+	focus:border-primary focus:shadow-md focus:shadow-primary
+	dark:bg-dark-black_prime dark:text-white dark:border-white;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	transition: box-shadow 0.3s ease;
+}
+
+.icon {
+	@apply absolute top-6 right-5 w-8 h-8 rotate-90 opacity-60;
+}
+
+.label {
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
+}

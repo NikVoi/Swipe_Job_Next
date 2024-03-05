@@ -1,0 +1,13 @@
+.button {
+	@apply flex justify-center w-16 h-16 text-3xl  items-center p-4 rounded-2xl relative mr-4
+	dark:bg-dark-black_prime bg-light-black_secondary;
+
+	&:last-child {
+		@apply mr-0;
+	}
+
+	&:hover {
+		@apply duration-500 rounded-2xl border-solid border-spacing-2 bg-gray
+		dark:bg-black;
+	}
+}

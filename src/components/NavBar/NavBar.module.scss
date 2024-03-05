@@ -1,0 +1,79 @@
+.modal {
+	@apply absolute left-0 z-10 flex w-full h-full  bg-dark-black_prime bg-opacity-50 dark:text-white duration-300;
+
+	&.open {
+		& .navBar {
+			@apply duration-300 left-0;
+		}
+	}
+
+	&.close {
+		& .navBar {
+			@apply duration-300 -left-1/2;
+		}
+
+		&.modal {
+			@apply duration-300 delay-300 bg-opacity-0 -z-10;
+		}
+	}
+}
+
+.navBar {
+	@apply relative h-full w-2/6 bg-white dark:bg-dark-black_secondary;
+}
+
+.holder {
+	@apply cursor-pointer w-full h-full;
+}
+
+.nav {
+	@apply flex flex-col w-full text-3xl;
+
+	& .item {
+		@apply flex items-center p-5 dark:hover:bg-dark-black_third hover:bg-light-black_third hover:duration-300;
+
+		& span {
+			@apply first:mr-4;
+		}
+	}
+}
+
+.hr {
+	@apply w-full h-1 border-b border-solid dark:border-white border-black mb-4;
+}
+
+.avatar {
+	@apply m-8 mb-4;
+
+	& .image {
+		@apply w-32 h-32 object-cover rounded-full;
+	}
+
+	& .name {
+		@apply mt-8 text-2xl font-bold;
+	}
+}
+
+.action {
+	@apply flex items-center justify-between p-5 dark:hover:bg-dark-black_third hover:bg-light-black_third hover:duration-300 cursor-pointer;
+}
+
+.radio {
+	@apply flex;
+
+	& span {
+		@apply first:mr-4;
+	}
+}
+
+.switch {
+	@apply w-16 h-10 bg-gray dark:bg-white bg-opacity-40 flex justify-start rounded-3xl p-2;
+}
+
+.switch[data-is='true'] {
+	@apply justify-end bg-opacity-70;
+}
+
+.handle {
+	@apply w-6 h-6 bg-black dark:bg-white rounded-full;
+}

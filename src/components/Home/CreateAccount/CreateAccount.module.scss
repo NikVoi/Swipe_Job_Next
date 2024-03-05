@@ -1,0 +1,52 @@
+.create {
+	@apply flex p-12 pb-12 bg-light-black_third dark:bg-dark-black_secondary dark:text-white duration-300 max-sm:flex-col-reverse  max-sm:items-center max-sm:p-0  max-sm:mt-10 max-sm:mb-14;
+}
+
+.picture {
+	@apply relative w-1/2 max-sm:w-5/6;
+
+	& img {
+		@apply w-10/12 h-full object-fill relative z-0;
+	}
+
+	& .circle {
+		@apply absolute w-9/12 h-4/6 top-44 left-0  bg-secondary rounded-full;
+	}
+}
+
+.profile {
+	@apply absolute z-10 flex justify-center items-center flex-col left-2/3 top-40 p-10 shadow-xl rounded-3xl bg-white backdrop-blur-sm bg-opacity-50
+	dark:bg-black dark:bg-opacity-50 dark:backdrop-blur-sm max-md:left-2/4 max-md:p-7 max-sm:left-2/3;
+
+	& .avatar {
+		@apply overflow-hidden w-32 h-32 rounded-full;
+
+		& img {
+			@apply w-full h-full bg-dark-black_secondary;
+		}
+	}
+
+	& .name {
+		@apply text-center mt-4 mb-4 text-2xl font-bold;
+	}
+
+	& .categories {
+		@apply text-center text-xl;
+	}
+}
+
+.info {
+	@apply w-1/2 max-sm:w-5/6 max-sm:mb-20;
+
+	h3 {
+		@apply text-secondary text-4xl mt-8 mb-8 max-md:text-3xl;
+	}
+
+	h2 {
+		@apply text-5xl mb-8 font-bold max-md:text-4xl;
+	}
+
+	h4 {
+		@apply text-2xl mb-40 max-sm:mb-10;
+	}
+}

@@ -1,0 +1,55 @@
+.footer {
+	@apply py-10 bg-dark-black_prime text-white;
+}
+
+.top {
+	@apply flex justify-between px-12 py-8 mb-12 border-solid border-b-2 border-white;
+}
+
+.bottom {
+	@apply px-6 text-xl text-center;
+}
+
+.logo {
+	@apply mb-8;
+}
+
+.item {
+	& h2 {
+		@apply text-4xl;
+	}
+
+	& h3 {
+		@apply text-2xl font-bold uppercase;
+	}
+
+	&:last-child {
+		@apply flex justify-between items-end;
+	}
+}
+
+.nav {
+	@apply flex flex-col mt-4;
+
+	& a {
+		@apply mb-4 text-2xl no-underline;
+
+		&:hover {
+			@apply transition duration-300 ease-in-out text-primary;
+		}
+	}
+}
+
+.link {
+	@apply mr-8;
+
+	& a {
+		& svg {
+			@apply size-12;
+		}
+	}
+
+	&:last-child {
+		@apply mr-0;
+	}
+}

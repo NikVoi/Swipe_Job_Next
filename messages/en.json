@@ -1,0 +1,35 @@
+{
+	"MainPage": {
+		"LogIn": "LogIn",
+		"SingIn": "Sing Up",
+
+		"AboutTitleGrad_1": "Swipe Job:",
+		"AboutTitleStart": "where is every gesture",
+		"AboutTitleBold": "step",
+		"AboutTitleEnd": "to the new ones",
+		"AboutTitleGrad_2": "opportunities!",
+		"AboutDescription": "We don't just offer you a job, we open up to you a source of inspiration and an opportunity to unlock your potential in the professional field. Our innovative approach to job search allows us to approach the ideal cooperation with every swipe. Join our platform today and give your career the start it deserves!",
+		"AboutJob": "Job Vacancy",
+
+		"CreateSubTitle": "Create a profile",
+		"CreateTitle": "Build your personal profile",
+		"CreateDescription": "Create an account to get the job information you need, receive daily notifications, and you can easily apply directly to the company you need and create an account right now for free",
+		"CreateButton": "Create Account",
+		"CreateName": "Elizabeth",
+
+		"HowSubTitle": "How does it work?",
+		"HowTitle": "A Simple Step to Finding and Applying for Your Dream Job",
+		"HowDescription": "We will help you easily find your dream job, let us help You can handle everything you need",
+		"HowBlock": "You are hired",
+		"HowBlockDesc": "Congratulations, you got a job as a user interface designer in CODE.ID",
+
+		"FooterTitle": "FIND A NEW JOB TODAY!",
+		"FooterAboutUs": "About us",
+		"FooterDev": "Developer",
+		"FooterAbout": "About",
+		"FooterCopyright": "© 2024 Copyright by Nik_Voi Developers. All rights reserved."
+	},
+	"Index": {
+		"title": "Hello world!"
+	}
+}

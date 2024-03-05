@@ -1,0 +1,51 @@
+.form {
+}
+
+.wrapper {
+	@apply mb-12;
+
+	& .title {
+		@apply text-5xl mb-3;
+
+		& span {
+			@apply font-bold;
+		}
+	}
+
+	& .description {
+		@apply text-xl text-gray mb-12;
+	}
+}
+
+.input {
+	@apply duration-500 block w-full h-20 p-4 border-solid border border-gray border-opacity-50 text-2xl rounded-2xl  mb-4 focus:border-secondary dark:bg-dark-black_prime
+	dark:border-white dark:text-white text-black;
+
+	&:focus {
+		@apply border-primary shadow-md shadow-primary;
+	}
+}
+
+.select {
+	@apply dark:bg-dark-black_prime mb-4;
+}
+
+.join {
+	@apply flex;
+}
+
+.authButton {
+	@apply flex justify-center items-center ml-4 bg-secondary rounded-full p-4 text-white;
+
+	& svg {
+		@apply w-12 h-12 text-white;
+	}
+
+	&:hover {
+		@apply duration-500 bg-primary;
+	}
+}
+
+.mb {
+	@apply mb-0;
+}

@@ -1,0 +1,7 @@
+.slider {
+	@apply w-7/12 h-full;
+
+	& img {
+		@apply h-full object-cover;
+	}
+}

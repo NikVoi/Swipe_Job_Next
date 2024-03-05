@@ -1,0 +1,21 @@
+.content {
+	@apply flex flex-col justify-around w-5/12 h-full py-14 px-16 bg-light-black_third dark:bg-dark-black_secondary;
+}
+
+.logo {
+	@apply w-24;
+}
+
+.choice {
+	@apply flex justify-evenly mb-16 mt-8;
+}
+
+.authChoice {
+	@apply flex;
+}
+
+.anotherAuth {
+	& h3 {
+		@apply text-xl mb-4;
+	}
+}

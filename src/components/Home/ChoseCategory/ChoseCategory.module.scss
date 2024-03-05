@@ -1,0 +1,29 @@
+.categories {
+	h2 {
+		@apply text-primary text-center text-4xl font-bold pt-10 pb-10 dark:bg-dark-black_secondary duration-300;
+	}
+}
+
+.wrapper {
+	@apply flex flex-wrap justify-center dark:bg-dark-black_secondary duration-300;
+}
+
+.item {
+	@apply flex justify-evenly  items-center w-96 h-40 m-4 rounded-3xl bg-white  backdrop-blur-sm bg-opacity-50 dark:backdrop-blur-sm cursor-pointer;
+
+	&.active {
+		@apply bg-primary backdrop-blur-sm text-white duration-300;
+	}
+
+	& .ico {
+		@apply text-6xl;
+	}
+
+	& h3 {
+		@apply w-40 text-2xl font-bold mb-2;
+	}
+
+	& h4 {
+		@apply text-2xl;
+	}
+}

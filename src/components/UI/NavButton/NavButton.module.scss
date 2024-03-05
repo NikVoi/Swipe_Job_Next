@@ -1,0 +1,12 @@
+.button {
+	@apply absolute cursor-pointer top-8 left-8 w-12 h-9
+	after:content-[''] after:absolute after:bottom-0  after:block after:rounded-xl after:w-full after:h-2 after:bg-light-black_prime
+	after:dark:bg-white
+	
+	before:content-[''] before:absolute before:top-0  before:block before:rounded-xl before:w-full before:h-2 before:bg-light-black_prime
+	before:dark:bg-white;
+}
+
+.span {
+	@apply w-full block h-2 rounded-xl bg-light-black_prime dark:bg-white;
+}
