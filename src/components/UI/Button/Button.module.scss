@@ -1,8 +1,12 @@
 .button {
-	@apply pr-7 pl-7 pt-5 pb-5 tracking-widest text-3xl text-white font-bold rounded-full bg-gradient-to-r from-primary to-lightBlue;
-	transition: background-color 0.3s;
+	@apply flex items-center p-3 pl-5 pr-5 text-primary w-auto border-2 border-solid rounded-xl border-primary
+	hover:bg-primary hover:text-white  hover:duration-500;
 
-	&.disable {
-		@apply bg-gray cursor-auto;
+	& span {
+		@apply even:ml-4 text-3xl;
+
+		& svg {
+			@apply last:w-7 h-7;
+		}
 	}
 }

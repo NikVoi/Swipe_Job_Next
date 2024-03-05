@@ -1,4 +1,4 @@
-import Button from '@/components/UI/MainButton/MainButton'
+import Button from '@/components/UI/Button/Button'
 import Avatar from './Avatar/Avatar'
 import styles from './Preference.module.scss'
 import UserDetails from './UserDetails/UserDetails'

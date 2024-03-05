@@ -3,7 +3,7 @@ import { FaRegImage } from 'react-icons/fa'
 import { RiDeleteBin6Line } from 'react-icons/ri'
 
 import img from '@/assets/gamer.png'
-import Button from '@/components/UI/MainButton/MainButton'
+import Button from '@/components/UI/Button/Button'
 import styles from './Avatar.module.scss'
 
 export default function Avatar() {

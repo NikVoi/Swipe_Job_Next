@@ -51,7 +51,6 @@ export default function Footer() {
 							<Image src={Logo} alt='logo' />
 						</Link>
 					</div>
-					<h3>{t('FooterTitle')}</h3>
 				</motion.div>
 
 				<motion.div

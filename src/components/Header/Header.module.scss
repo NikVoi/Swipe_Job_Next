@@ -1,6 +1,10 @@
 .header {
 	@apply flex justify-between py-4 px-8 bg-dark-black_prime 
-	text-white;
+	text-white max-sm:px-5;
+}
+
+.logo {
+	@apply w-20;
 }
 
 .sing {

@@ -7,7 +7,6 @@ import Link from 'next/link'
 
 import Logo from '@/assets/logo.png'
 import { useLocale, useTranslations } from 'next-intl'
-import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'
 import Button from '../UI/Button/Button'
 import styles from './Header.module.scss'
 
@@ -33,7 +32,7 @@ export default function Header() {
 				</motion.div>
 			</Link>
 
-			<LanguageSwitcher />
+			{/* <LanguageSwitcher /> */}
 
 			<motion.div
 				initial={{ opacity: 0, x: 50 }}

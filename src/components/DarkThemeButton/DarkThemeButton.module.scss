@@ -1,5 +1,5 @@
 .dark {
-	@apply flex justify-center items-center w-16 h-16 rounded-full fixed bottom-10 right-10 bg-dark-black_secondary dark:bg-white duration-200;
+	@apply flex justify-center items-center w-16 h-16 rounded-full fixed bottom-10 right-10 bg-dark-black_secondary dark:bg-white duration-200 max-sm:z-50;
 
 	& svg {
 		@apply w-8 h-8 text-white dark:text-black;

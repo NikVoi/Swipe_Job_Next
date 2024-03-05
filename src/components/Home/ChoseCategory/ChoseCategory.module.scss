@@ -9,21 +9,26 @@
 }
 
 .item {
-	@apply flex justify-evenly  items-center w-96 h-40 m-4 rounded-3xl bg-white  backdrop-blur-sm bg-opacity-50 dark:backdrop-blur-sm cursor-pointer;
+	@apply flex justify-evenly items-center flex-wrap w-96 h-40 m-4 rounded-3xl bg-white  backdrop-blur-sm bg-opacity-50 dark:backdrop-blur-sm cursor-pointer
+	 max-sm:h-32 max-sm:w-80;
 
 	&.active {
 		@apply bg-primary backdrop-blur-sm text-white duration-300;
 	}
 
 	& .ico {
-		@apply text-6xl;
+		@apply text-6xl max-sm:w-1/6;
+	}
+
+	& .text {
+		@apply max-sm:w-32;
 	}
 
 	& h3 {
-		@apply w-40 text-2xl font-bold mb-2;
+		@apply w-40 text-2xl font-bold mb-2 max-sm:text-xl;
 	}
 
 	& h4 {
-		@apply text-2xl;
+		@apply text-2xl max-sm:text-xl;
 	}
 }

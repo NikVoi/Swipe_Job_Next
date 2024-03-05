@@ -1,12 +1,16 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 import styles from './Button.module.scss'
 
-type Props = {
+interface ButtonProps {
+	ico?: ReactNode
 	text: string
 }
 
-const Button: FC<Props> = ({ text }) => {
-	return <button className={styles.button}>{text}</button>
-}
+const Button: FC<ButtonProps> = ({ ico, text }) => (
+	<button className={styles.button}>
+		{ico && <span>{ico}</span>}
+		<span>{text}</span>
+	</button>
+)
 
 export default Button
