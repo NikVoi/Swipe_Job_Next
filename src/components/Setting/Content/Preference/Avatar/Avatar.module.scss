@@ -3,7 +3,7 @@
 }
 
 .img {
-	@apply flex w-40 h-40 object-cover mr-12 rounded-full;
+	@apply flex size-40 object-cover mr-12 rounded-full max-md:size-36;
 }
 
 .wrapper {

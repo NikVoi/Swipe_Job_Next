@@ -4,7 +4,9 @@
 	after:dark:bg-white
 	
 	before:content-[''] before:absolute before:top-0  before:block before:rounded-xl before:w-full before:h-2 before:bg-light-black_prime
-	before:dark:bg-white;
+	before:dark:bg-white
+	
+	max-md:left-4;
 }
 
 .span {

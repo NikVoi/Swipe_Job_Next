@@ -1,8 +1,10 @@
 .label {
-	@apply text-3xl pl-2 duration-300;
+	@apply text-3xl pl-2 duration-300 max-md:text-2xl;
 }
 
 .input {
 	@apply mt-2 duration-300 block w-full h-20 p-4 border-solid border border-gray text-2xl rounded-2xl bg-white	 dark:bg-dark-black_third dark:text-white placeholder:text-gray
-	focus:border-primary focus:shadow-md focus:shadow-primary;
+	focus:border-primary focus:shadow-md focus:shadow-primary
+	
+	max-md:h-16 max-md:text-2xl max-md:placeholder:text-xl;
 }
