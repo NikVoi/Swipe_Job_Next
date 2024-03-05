@@ -1,11 +1,9 @@
 .button {
 	@apply flex items-center p-3 pl-5 pr-5 text-primary w-auto border-2 border-solid rounded-xl border-primary
-	hover:bg-primary hover:text-white  hover:duration-500
-
-	max-md:py-3 max-md:px-4;
+	hover:bg-primary hover:text-white hover:duration-500;
 
 	& span {
-		@apply even:ml-4 text-3xl max-md:text-2xl font-bold;
+		@apply even:ml-4 text-3xl max-md:text-2xl max-md:font-bold;
 
 		& svg {
 			@apply last:w-7 h-7;
