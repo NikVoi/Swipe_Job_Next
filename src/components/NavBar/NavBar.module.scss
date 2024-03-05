@@ -19,7 +19,7 @@
 }
 
 .navBar {
-	@apply relative h-full w-2/6 bg-white dark:bg-dark-black_secondary;
+	@apply relative h-full w-2/6 bg-white dark:bg-dark-black_secondary max-md:w-4/6;
 }
 
 .holder {
