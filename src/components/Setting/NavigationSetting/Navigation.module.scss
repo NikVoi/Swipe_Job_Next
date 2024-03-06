@@ -7,7 +7,7 @@
 }
 
 .item {
-	@apply flex justify-around items-center cursor-pointer mb-10 last:mb-0 text-4xl hover:text-primary hover:duration-500 max-md:text-6xl;
+	@apply flex items-center cursor-pointer mb-10 last:mb-0 text-4xl hover:text-primary hover:duration-500 max-md:text-6xl;
 
 	&.active {
 		@apply text-primary;
