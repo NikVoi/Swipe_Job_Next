@@ -1,31 +1,52 @@
 'use client'
 
+import { useEffect, useState } from 'react'
+
+import { navItem } from '@/data/setting/navItem'
+import { IoClose } from 'react-icons/io5'
+import Notification from './Content/Notification/Notification'
 import Preference from './Content/Preference/Preference'
+import Security from './Content/Security/Security'
 import Navigation from './NavigationSetting/Navigation'
 import styles from './Setting.module.scss'
 
-import { navItem } from '@/data/setting/navItem'
-import { useState } from 'react'
-import Notification from './Content/Notification/Notification'
-import Security from './Content/Security/Security'
-
 const Setting: React.FC = () => {
 	const [activeItem, setActiveItem] = useState<string>('Account preference')
-	const [settingsOpen, setSettingsOpen] = useState<boolean>(false)
+	const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth)
+	const [showNavigation, setShowNavigation] = useState<boolean>(
+		window.innerWidth >= 768
+	)
+
+	useEffect(() => {
+		const handleResize = () => {
+			setWindowWidth(window.innerWidth)
+			setShowNavigation(window.innerWidth >= 768)
+		}
+
+		window.addEventListener('resize', handleResize)
+
+		return () => {
+			window.removeEventListener('resize', handleResize)
+		}
+	}, [])
 
 	const handleItemClick = (item: string) => {
 		setActiveItem(item)
-		setSettingsOpen(true)
+		if (windowWidth < 768) {
+			setShowNavigation(false)
+		}
 	}
 
 	const closeSettings = () => {
-		setSettingsOpen(false)
-		setActiveItem('Account preference') // Reset active item when settings are closed
+		setActiveItem('')
+		if (windowWidth < 768) {
+			setShowNavigation(true)
+		}
 	}
 
 	return (
 		<section className={styles.setting}>
-			{!settingsOpen && (
+			{showNavigation && (
 				<Navigation
 					activeItem={activeItem}
 					onItemClick={handleItemClick}
@@ -33,13 +54,15 @@ const Setting: React.FC = () => {
 				/>
 			)}
 
-			{settingsOpen && (
-				<>
+			{activeItem && (
+				<section className={styles.wrapper}>
 					{activeItem === 'Account preference' && <Preference />}
 					{activeItem === 'Sign in & security' && <Security />}
 					{activeItem === 'Notification' && <Notification />}
-					<button onClick={closeSettings}>Close Settings</button>
-				</>
+					<button onClick={closeSettings} className={styles.close}>
+						<IoClose />
+					</button>
+				</section>
 			)}
 		</section>
 	)

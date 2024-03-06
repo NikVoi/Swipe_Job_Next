@@ -1,3 +1,15 @@
 .setting {
 	@apply flex justify-center items-center h-full bg-light-black_third dark:bg-dark-black_secondary dark:text-white duration-300;
 }
+
+.wrapper {
+	@apply relative h-4/5 w-3/5 max-md:w-3/4;
+}
+
+.close {
+	@apply absolute top-4 right-4 md:hidden;
+
+	& svg {
+		@apply w-10 h-10;
+	}
+}

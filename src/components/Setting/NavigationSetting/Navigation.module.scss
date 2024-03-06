@@ -1,5 +1,5 @@
 .navigation {
-	@apply bg-white dark:bg-dark-black_third p-6 rounded-3xl h-4/5 w-96 mr-12 duration-300 max-md:w-2/4;
+	@apply bg-white dark:bg-dark-black_third p-6 rounded-3xl h-4/5 w-96 mr-12 duration-300 max-md:w-3/4;
 }
 
 .title {
@@ -7,13 +7,13 @@
 }
 
 .item {
-	@apply flex justify-start items-center cursor-pointer mb-10 last:mb-0 text-4xl hover:text-primary hover:duration-500;
+	@apply flex justify-around items-center cursor-pointer mb-10 last:mb-0 text-4xl hover:text-primary hover:duration-500 max-md:text-6xl;
 
 	&.active {
 		@apply text-primary;
 	}
 
 	& span {
-		@apply inline-block first:mr-4  last:text-2xl;
+		@apply inline-block first:mr-4  last:text-2xl max-md:last:text-4xl;
 	}
 }
