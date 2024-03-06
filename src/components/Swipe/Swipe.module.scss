@@ -1,13 +1,13 @@
 .swipe {
-	@apply flex justify-center items-start flex-col w-full h-full;
+	@apply flex justify-center items-start flex-col w-full h-full dark:bg-dark-black_secondary duration-300;
 }
 
 .wrapper {
-	@apply flex justify-center items-start w-full h-4/6 mb-12;
+	@apply flex justify-center items-start w-full h-5/6 mb-12 max-md:h-4/6;
 }
 
 .card {
-	@apply w-3/12 h-full overflow-hidden rounded-3xl cursor-grab max-md:w-3/6 max-sm:w-4/5;
+	@apply w-3/12 h-full overflow-hidden rounded-3xl cursor-grab max-md:w-4/5;
 }
 
 .image {
@@ -19,7 +19,7 @@
 }
 
 .button {
-	@apply w-28 h-28 rounded-full first:bg-red bg-green p-4 first:mr-20 last:ml-20;
+	@apply w-28 h-28 rounded-full first:bg-red bg-green p-4 first:mr-20 last:ml-20 text-white;
 
 	& svg {
 		@apply w-full h-full;
