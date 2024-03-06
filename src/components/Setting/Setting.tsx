@@ -11,7 +11,7 @@ import Navigation from './NavigationSetting/Navigation'
 import styles from './Setting.module.scss'
 
 const Setting: React.FC = () => {
-	const [activeItem, setActiveItem] = useState<string>('Account preference')
+	const [activeItem, setActiveItem] = useState<string>('')
 	const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth)
 	const [showNavigation, setShowNavigation] = useState<boolean>(
 		window.innerWidth >= 768
@@ -21,6 +21,15 @@ const Setting: React.FC = () => {
 		const handleResize = () => {
 			setWindowWidth(window.innerWidth)
 			setShowNavigation(window.innerWidth >= 768)
+		}
+
+		if (windowWidth < 768) {
+			setShowNavigation(true)
+		}
+
+		if (windowWidth > 768) {
+			setShowNavigation(true)
+			setActiveItem('Account preference')
 		}
 
 		window.addEventListener('resize', handleResize)
