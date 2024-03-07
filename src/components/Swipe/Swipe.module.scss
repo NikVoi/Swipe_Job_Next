@@ -6,14 +6,6 @@
 	@apply flex justify-center items-start w-full h-5/6 mb-12 max-md:h-4/6;
 }
 
-.card {
-	@apply w-3/12 h-full overflow-hidden rounded-3xl cursor-grab max-md:w-4/5;
-}
-
-.image {
-	@apply w-full h-full object-cover;
-}
-
 .action {
 	@apply flex justify-center items-center w-full;
 }

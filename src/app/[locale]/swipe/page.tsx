@@ -12,7 +12,9 @@ export default function SwipePage() {
 
 	return (
 		<main
-			className={`relative flex flex-col h-full ${isDarkMode ? 'dark' : ''}`}
+			className={`relative flex flex-col h-full overflow-hidden ${
+				isDarkMode ? 'dark' : ''
+			}`}
 		>
 			<NavButton onOpen={openModal} />
 

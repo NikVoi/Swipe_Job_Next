@@ -1,19 +1,13 @@
-import Image from 'next/image'
 import { BiDislike, BiLike } from 'react-icons/bi'
 
-import img from '@/assets/human.jpg'
+import ItemCard from './ItemCard/ItemCard'
 import styles from './Swipe.module.scss'
 
 export default function Swipe() {
 	return (
 		<section className={styles.swipe}>
 			<section className={styles.wrapper}>
-				<div className={styles.card}>
-					<Image src={img} alt='human' className={styles.image}></Image>
-					<div className='name'></div>
-					<div className={styles.description}></div>
-					<div className={styles.skills}></div>
-				</div>
+				<ItemCard />
 			</section>
 
 			<section className={styles.action}>
