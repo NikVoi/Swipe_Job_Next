@@ -31,21 +31,25 @@ const db = [
 	},
 ]
 
-export default function Swipe() {
-	const [items, setItems] = useState(db)
+interface SwipeItem {
+	name: string
+	JSX: JSX.Element
+}
 
-	const [currentIndex, setCurrentIndex] = useState(db.length - 1)
-	const [lastDirection, setLastDirection] = useState()
-	const currentIndexRef = useRef(currentIndex)
+export default function Swipe() {
+	const [items, setItems] = useState<SwipeItem[]>(db)
+
+	const [currentIndex, setCurrentIndex] = useState<number>(db.length - 1)
+	const [lastDirection, setLastDirection] = useState<string | undefined>()
+	const currentIndexRef = useRef<number>(currentIndex)
 
 	const childRefs = useMemo(
 		() =>
 			Array(db.length)
 				.fill(0)
-				.map(i => createRef()),
+				.map(i => createRef<any>()),
 		[]
 	)
-
 	const updateCurrentIndex = (val: number) => {
 		setCurrentIndex(val)
 		currentIndexRef.current = val
@@ -62,12 +66,15 @@ export default function Swipe() {
 
 	const outOfFrame = (name: string, idx: number) => {
 		console.log(`${name} (${idx}) left the screen!`, currentIndexRef.current)
-		currentIndexRef.current >= idx && childRefs[idx].current.restoreCard()
+		const currentRef = childRefs[idx].current as any
+		if (currentIndexRef.current >= idx && currentRef) {
+			currentRef.restoreCard()
+		}
 	}
 
 	const swipe = async (dir: string) => {
 		if (canSwipe && currentIndex < db.length) {
-			await childRefs[currentIndex].current.swipe(dir)
+			await (childRefs[currentIndex].current as any).swipe(dir)
 		}
 	}
 
@@ -75,7 +82,7 @@ export default function Swipe() {
 		if (!canGoBack) return
 		const newIndex = currentIndex + 1
 		updateCurrentIndex(newIndex)
-		await childRefs[newIndex].current.restoreCard()
+		await (childRefs[newIndex].current as any).restoreCard()
 	}
 
 	return (
