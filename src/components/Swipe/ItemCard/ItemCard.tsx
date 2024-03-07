@@ -9,7 +9,7 @@ import img from '@/assets/human.jpg'
 
 const ItemCard = () => {
 	return (
-		<div className={styles.card}>
+		<>
 			<Image src={img} alt='human' className={styles.image}></Image>
 
 			<div className={styles.name}>User Name</div>
@@ -38,7 +38,7 @@ const ItemCard = () => {
 				<div className={styles.skillItem}>Postgressdfgsdfg</div>
 				<div className={styles.skillItem}>Postgres</div>
 			</div>
-		</div>
+		</>
 	)
 }
 
