@@ -10,7 +10,9 @@ import styles from './Swipe.module.scss'
 
 const db = [
 	{
+		id: 1,
 		name: 'Richard Hendricks',
+		vacancy: 'Programmer',
 		JSX: <ItemCard />,
 	},
 	{

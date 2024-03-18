@@ -1,0 +1,25 @@
+.match {
+	@apply relative h-2/5 bg-white flex items-center pl-2.5 overflow-hidden  overflow-x-scroll snap-mandatory snap-x max-md:pt-16 max-md:h-3/5 max-md:pl-3
+	dark:bg-dark-black_secondary;
+}
+
+.item {
+	@apply snap-center flex flex-col min-w-36 h-5/6 mr-5 max-md:min-w-44 max-md:h-3/4 last:mr-2.5 max-md:last:mr-3 max-md:mr-6;
+
+	& h3 {
+		@apply font-bold text-2xl h-auto text-center mt-2;
+	}
+}
+
+.avatar {
+	@apply w-full h-full object-none object-center border-2 border-solid border-primary rounded-2xl;
+}
+
+.match {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	overflow-y: scroll;
+}
+.match::-webkit-scrollbar {
+	display: none;
+}

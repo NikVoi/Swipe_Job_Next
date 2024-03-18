@@ -1,5 +1,5 @@
 .button {
-	@apply absolute cursor-pointer top-8 left-8 w-12 h-9
+	@apply absolute cursor-pointer z-10 top-8 left-8 w-12 h-9
 	after:content-[''] after:absolute after:bottom-0  after:block after:rounded-xl after:w-full after:h-2 after:bg-light-black_prime
 	after:dark:bg-white
 	

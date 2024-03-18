@@ -19,11 +19,11 @@
 }
 
 .navBar {
-	@apply relative h-full w-2/6 bg-white dark:bg-dark-black_secondary max-md:w-4/6;
+	@apply relative h-full w-2/6 bg-white dark:bg-dark-black_secondary max-md:max-w-sm max-md:w-full;
 }
 
 .holder {
-	@apply cursor-pointer w-full h-full;
+	@apply cursor-pointer w-full h-full max-md:w-1/3;
 }
 
 .nav {

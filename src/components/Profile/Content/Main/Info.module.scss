@@ -1,0 +1,19 @@
+.about {
+	@apply text-2xl mb-10 pt-5;
+}
+
+.title {
+	@apply text-3xl font-bold mb-4;
+}
+
+.list {
+	@apply mb-10;
+
+	ul {
+		@apply flex flex-wrap gap-5;
+
+		li {
+			@apply px-7 py-4 text-2xl border border-solid border-gray rounded-full;
+		}
+	}
+}

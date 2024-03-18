@@ -1,0 +1,35 @@
+.chats {
+	@apply flex flex-col h-full bg-white overflow-y-auto dark:bg-dark-black_secondary;
+}
+
+.item {
+	@apply flex justify-between p-5 cursor-pointer duration-75 border-t border-solid border-gray last:border-b overflow-hidden 
+	
+	hover:bg-light-black_third 
+	hover:border-l-4 hover:border-solid hover:border-l-primary
+	dark:hover:bg-gray dark:hover:bg-opacity-40;
+}
+
+.active {
+	@apply border-l-4 border-solid border-l-primary bg-light-black_third dark:bg-gray dark:bg-opacity-40;
+}
+
+.avatar {
+	@apply size-20 object-none object-center overflow-hidden rounded-full;
+}
+
+.wrapper {
+	@apply flex-1 text-2xl mx-5 my-3 flex flex-col justify-between overflow-hidden;
+}
+
+.name {
+	@apply font-bold max-md:text-3xl;
+}
+
+.lastMes {
+	@apply truncate w-full max-md:text-2xl;
+}
+
+.date {
+	@apply text-2xl opacity-50;
+}

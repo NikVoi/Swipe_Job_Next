@@ -1,0 +1,38 @@
+.profile {
+	@apply relative h-full w-full flex justify-center items-center
+	backdrop-blur-lg
+dark:text-white bg-light-black_third dark:bg-dark-black_secondary;
+}
+
+.glass {
+	@apply flex flex-col justify-around items-center bg-white bg-opacity-30  backdrop-blur h-5/6 w-10/12 dark:bg-black dark:bg-opacity-50 dark:backdrop-blur-xl rounded-3xl overflow-hidden border-2 border-white border-solid;
+}
+
+.circle {
+	@apply absolute w-3/6 h-4/6 blur-3xl bg-primary rounded-full
+	first:-top-60 first:-left-60 even:-bottom-60 even:-right-60;
+}
+
+.bg {
+	@apply absolute w-full h-full top-0 left-0;
+}
+
+.avatar {
+	@apply size-40 object-cover rounded-full mb-5;
+}
+
+.top {
+	@apply flex flex-col items-center p-4;
+}
+
+.name {
+	@apply text-4xl font-bold mb-4;
+}
+
+.additional {
+	@apply text-2xl opacity-60 mb-4;
+}
+
+.content {
+	@apply px-20 overflow-y-scroll w-full flex-1 max-md:px-5;
+}

@@ -1,0 +1,16 @@
+.navigate {
+	@apply w-full pb-4;
+
+	ul {
+		@apply flex justify-center  border-t-2 border-solid border-white w-full;
+
+		li {
+			@apply relative text-2xl mr-20 cursor-pointer py-4 duration-100 last:mr-0 hover:after:h-1 hover:after:bg-primary
+			after:content-[''] after:absolute after:w-full after:left-0 after:duration-100 after:bottom-0 after:h-0 after:bg-primary;
+
+			&.active {
+				@apply after:h-1 after:bg-primary;
+			}
+		}
+	}
+}

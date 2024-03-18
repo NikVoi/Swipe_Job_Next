@@ -1,0 +1,43 @@
+.vacations {
+	@apply h-full max-md:px-5 my-12;
+
+	ul {
+		@apply flex flex-wrap justify-between gap-10 h-full text-2xl;
+
+		li {
+			@apply flex flex-col justify-between p-5 border border-solid border-white rounded-3xl w-3/12 max-md:w-full bg-white bg-opacity-80 dark:bg-dark-black_secondary dark:bg-opacity-50;
+		}
+	}
+}
+
+.wrapper {
+	@apply rounded-3xl mb-5;
+}
+
+.companyName {
+	@apply text-3xl mb-2;
+}
+
+.vacation {
+	@apply text-4xl mb-8;
+}
+
+.keyWord {
+	@apply flex flex-wrap text-xl gap-3;
+
+	.item {
+		@apply p-2 px-5 border border-solid border-black rounded-full dark:border-white;
+	}
+}
+
+.salary {
+	@apply text-3xl  font-bold;
+}
+
+.place {
+	@apply text-3xl opacity-70;
+}
+
+.notFound {
+	@apply flex justify-center items-center h-full text-3xl font-bold uppercase;
+}
